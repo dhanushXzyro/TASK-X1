@@ -1,61 +1,22 @@
-//Arrow function to receive two inputs as parameters and return their sum
+// 1. Arrow function to return the sum of two inputs
+const sum = (a, b) => a + b;
+console.log("Sum:", sum(5, 3));
 
-const sum = (a, b) => {
-    return a + b;
-};
-console.log(sum(5, 3));
+// 2. Arrow function to return the square of an input
+const square = (n) => n * n;
+console.log("Square:", square(4));
 
-//Arrow function to receive an input as parameter and return its square
+// 3. Arrow function to print "Hello World!"
+const helloWorld = () => console.log("Hello World!");
+helloWorld();
 
-const square = (n) => {
-    return n * n;
-};
-console.log(square(4));
-//16
+// 4. Arrow function to print "HI" along with the user's name
+const greetUser = (name) => console.log(`HI ${name}`);
+greetUser("Alice");
 
-//Arrow function to print "Hello World!"
-
-const hello = () => {
-
-
-    console.log("Hello World!");
-
-
-};
-
-
-hello();
-
-
-//Arrow function to receive the name of the user as parameter and print that name along with a message "HI"
-
-
-const greet = (name) => {
-
-
-    console.log("Hi " + name);
-
-
-};
-
-
-greet("Bala");
-
-
-//Arrow function to receive two inputs as parameters, multiply them and store it in a variable, then print that variable's value along with the message "Multiplication:"
-
-
+// 5. Arrow function to multiply two inputs, store in a variable, and print it
 const multiply = (a, b) => {
-
-
-    let result = a * b;
-
-
-    console.log("Multiplication: " + result);
-
-
+  const result = a * b;
+  console.log("Multiplication :", result);
 };
-
-
-multiply(4, 5);
-
+multiply(6, 7);
